@@ -1,0 +1,625 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Мебель Макс</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}"/>
+	<link href="{% static 'libs/owl-carousel/owl.carousel.css' %}" rel="stylesheet"/>
+	<link href="{% static 'libs/Swiper-4.0.6/dist/css/swiper.css' %}" rel="stylesheet"/>
+	<link href="{% static 'libs/jquery-nice-select-1.1.0/css/nice-select.css' %}" rel="stylesheet"/>
+	<link href="{% static 'css/fonts.css' %}" rel="stylesheet"/>
+	<link href="{% static 'css/normalize.css' %}" rel="stylesheet"/>
+	<link href="{% static 'css/main.css' %}" rel="stylesheet"/>
+	<link href="{% static 'css/media.css' %}" rel="stylesheet"/>
+</head>
+<body>
+	<main>
+		<div class="main-bg-wrap"><img src="{% static 'img/bg-1.png' %}"/></div>
+		<header>
+			<div class="line"></div>
+			<div class="container"><img src="{% static 'img/logo.png' %}" class="logo"/>
+				<h2>Производство ортопедических <br>матрасов во Владиовостоке</h2><img src="{% static 'img/burger.png' %}" class="burger"/>
+				<div class="head-phone">
+					<p>8 (981) 947-06-82</p><span>Перезвоните мне</span>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="container">
+				<ul class="navigation">
+					<li class="go1">О компании</li>
+					<li class="go2">Подбор матраса</li>
+					<li class="go3">Каталог</li>
+					<li class="go4">Консультация</li>
+					<li class="go5">На заказ</li>
+					<li class="go6">Контакты</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container main-1">
+			<h1>Просыпайтесь бодрыми и отдохнувшими <br>с ортопедическим матрасам от Мебель­Макс</h1>
+			<h3>Матрас поддерживает прямое положение позвоночника во время сна</h3>
+			<button class="main-button">подобрать матрас</button>
+		</div>
+		<div class="container main-2">
+			<div class="main-flex">
+				<div class="main-item clearfix"><span class="num">1.</span>
+					<p class="main-item-text">бесплатный<br>"sleep test" 3 дня</p>
+					<div class="info"><img src="{% static 'img/info.png' %}"/>
+						<p class="info-text">Выбирайте подходящий для вас матрас и тестируйте его в домашних условиях на протяжении 3х дней бесплатно <br>Обязательное условие, упаковка на матрасе не должна быть вскрыта</p>
+					</div>
+				</div>
+				<div class="main-item clearfix"><span class="num">2.</span>
+					<p class="main-item-text">любой размер <br>на заказ за 3-5 дней</p>
+					<div class="info"><img src="{% static 'img/info.png' %}"/>
+						<p class="info-text">Вы можете выбрать как готовую модель матраса, так и заказать по своим собственным размерам и наполнению</p>
+					</div>
+				</div>
+				<div class="main-item clearfix"><span class="num">3.</span>
+					<p class="main-item-text">гарантия <br>5 лет</p>
+				</div>
+				<div class="main-item clearfix"><span class="num">4.</span>
+					<p class="main-item-text">бесплатная доставка <br>по владивостоку</p>
+				</div>
+				<div class="main-item clearfix"><span class="num">5.</span>
+					<p class="main-item-text">оплата при <br>получении</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="section-1">
+		<div class="container"><img src="{% static 'img/romb1.png' %}" class="section-1-bg-1"/><img src="{% static 'img/romb2.png' %}" class="section-1-bg-2"/>
+			<h2>С 2008 года производим <br>матрасы для крепкого <br>и здорового сна
+				<div class="line"></div>
+			</h2>
+			<p>Компания Mebel­max – это современное производство ортопедических матрасов. <br><br>Мы создаем индивидуальные ортопедические матрасы, учитывая именно ваш возраст, вес, любимые позы для ночного отдыха <br><br>Вся продукция сертифицирована и соответствует <span>требованиям ГОСТ.</span></p>
+		</div>
+	</section>
+	<section class="section-2">
+		<div class="container"><img src="{% static 'img/romb3.png' %}" class="section-2-bg-1"/>
+			<h2>Производим матрасы из материалов <br>прошедших санитарный контроль в РФ</h2>
+			<div class="section-2__block clearfix">
+				<div class="section-2__menu">
+					<ul>
+						<li class="current-tab">Эластичная пена</li>
+						<li>Кокосовая койра</li>
+						<li>Латекс</li>
+						<li>Ткань</li>
+						<li>Пружины</li>
+					</ul>
+				</div>
+				<p class="mob-menu__label">Материал:</p>
+				<div class="section-2__mob-menu select"><span class="holder">Эластичная пена</span>
+					<ul>
+						<li>Эластичная пена</li>
+						<li>Кокосовая койра</li>
+						<li>Латекс</li>
+						<li>Ткань</li>
+						<li>Пружины					</li>
+					</ul>
+				</div>
+				<div class="section-2__right">
+					<div class="section-2__item current-item"><img src="{% static 'img/item1.png' %}"/>
+						<h5>Эластичная пена с эффектом памяти</h5>
+						<p>Искусственный, гипоаллергенный, мягкий, вспененный материал. Один из самых эргономичных и ортопедичных материалов. Реагирует на тепло человеческого тела и повторяет его контуры. Таким образом, матрас не оказывает обратного давления на тело, не нарушается кровообращение сосудов спящего человека, мышцы расслабляются быстрее, создаётся эффект невесомости и полное ощущение комфорта. Эластичная пена имеет высокую плотность, которая обеспечивает сохранность формы и износостойкость.</p>
+					</div>
+					<div class="section-2__item"><img src="{% static 'img/item2.png' %}"/>
+						<h5>Кокосовая койра</h5>
+						<p>Изготавливается из плотных длинных кокосовых волокон и латекса. <br>Латексная пропитка делает волокно эластичным, способным выдерживать большие нагрузки, не рассыпаясь и не деформируясь. <br>Латексированная кокосовая койра не крошится, поэтому не образует пыли. <br>Она гигиенична, абсолютно безопасна и гипоаллергенна. В ней не заводятся насекомые и бактерии, она не накапливает влагу и отлично вентилируется</p>
+					</div>
+					<div class="section-2__item"><img src="{% static 'img/item3.png' %}"/>
+						<h5>Натуральный латекс</h5>
+						<p>Изготавливают из сока каучуконосных деревьев. <br>Каучук (природный латекс) разрушается при попадании жира и ультрафиолета, поэтому при производстве латексной смеси, в ее состав вводят дополнительные стабилизирующие ингредиенты. Полученная латексная пена обладает должной эластичностью и упругостью (благодаря натуральному каучуку), и износостойкостью (благодаря присадкам). <br>Сам по себе материал имеет высокую плотность, благодаря этому отличную эластичность и большой срок службы</p>
+					</div>
+					<div class="section-2__item">
+						<div class="section-2__min-block clearfix"><img src="{% static 'img/item4.png' %}" class="s2im"/>
+							<div class="section-2__min-text">
+								<h5>Жаккард</h5>
+								<p>Большинство моделей матрасов изготавливаются в ткани жаккард, благодаря его прочности и устойчивости к деформациям. <br>Презентабельность внешнего вида жаккарда сохраняется нe один год: любые загрязнения на поверхности очень просто застирать, ткань быстро высохнет без пятен и разводов.</p>
+							</div>
+						</div>
+						<div class="section-2__min-block clearfix"><img src="{% static 'img/item7.png' %}" class="s2im"/>
+							<div class="section-2__min-text">
+								<h5>Трикотаж</h5>
+								<p>Мягкий и приятный материал, хорошо тянется и вентилируется, повторяя изгибы матраса без складок и натяжений. <br>Трикотаж ­ это «двухслойное» плетение, в котором верхний хлопчатобумажный слой соприкасается с телом человека, а нижний слой из смеси полиамида с вискозой улучшает прочность ткани.</p>
+							</div>
+						</div>
+					</div>
+					<div class="section-2__item">
+						<div class="section-2__min-block clearfix"><img src="{% static 'img/item5.png' %}" class="s2im"/>
+							<div class="section-2__min-text">
+								<h5>Блок независимых пружин -</h5>
+								<p>это множество не соединенных друг с другом пружин, каждая из которых находится в чехле из ткани. <br>Такие матрасы <strong>могут быть нескольких зон жёсткости,</strong> например, мягкая зона в районе поясницы, а жесткая - в районе плечевого пояса. Матрас подстраивается под контуры вашего тела, снимая нагрузку с мышц и поддерживая позвоночник в прямом положении. <br>В таких матрасах <strong>отсутствует «эффект волны»,</strong> когда лежащий рядом человек переворачивается или встает.</p>
+							</div>
+						</div>
+						<div class="section-2__min-block clearfix"><img src="{% static 'img/item6.png' %}" class="s2im"/>
+							<div class="section-2__min-text">
+								<h5>Блок зависимых пружин <br>Боннель -</h5>
+								<p>Все пружины связанны через металлическую раму друг с другом. <strong>Имеют одинаковую жёсткость</strong> на всей поверхности матраса. Матрас лишь приблизительно повторяет форму тела спящего человека. <br>В таких матрасах присутствует <strong>«эффект волны»,</strong> когда лежащий рядом человек, переворачивается или встает.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-3">
+		<div class="container">
+			<h2>Как правильно выбрать матрас?</h2>
+			<h3>При выборе матраса необходимо учитывать: <br>вес, возраст, предназначен ли матрас для двоих</h3>
+			<div class="section-3__block">
+				<div class="section-3__tab-flex">
+					<div class="section-3__tab choose-current-tab"><span class="tab-text">до <span>27</span> лет</span></div>
+					<div class="section-3__tab"><span class="tab-text">от <span>27</span> до <span>50</span> лет</span></div>
+					<div class="section-3__tab"><span class="tab-text">от <span>50</span> лет</span></div>
+					<div class="section-3__tab"><span class="tab-text">Матрас для двоих</span></div>
+				</div>
+				<div class="section-3__slider-block">
+					<div class="section-3__slider choose-current-slider">
+						<div class="section-3__item">
+							<h5>в возрасте до 27 лет</h5>
+							<p class="descriptor">следует выбирать матрас средней жёсткости.</p>
+							<p class="text">Если вес спящего свыше 80 кг то следует <br>выбирать матрасы повышенной жёсткости.</p><img src="{% static 'img/ch1.png' %}"/>
+						</div>
+					</div>
+					<div class="section-3__slider">
+						<div class="section-3__item">
+							<h5>В возрасте от 27 до 50 лет</h5>
+							<p class="descriptor">следует выбирать матрас в зависимости от веса спящего:</p>
+							<p class="text">- <span>до 55 кг</span> матрасы мягкой жёсткости без добавления <br>кокосовой койры. <br>- <span>от 55 ­ до 90 кг</span> матрасы средней жёсткости. <br>- <span>более 90 кг</span> жесткие матрасы.</p><img src="{% static 'img/ch2.png' %}"/>
+						</div>
+					</div>
+					<div class="section-3__slider">
+						<div class="section-3__item">
+							<h5>В возрасте от 50 лет</h5>
+							<p class="descriptor">следует выбирать матрасы мягкой жёсткости</p><img src="{% static 'img/ch3.png' %}"/>
+						</div>
+					</div>
+					<div class="section-3__slider">
+						<div class="section-3__item">
+							<h5>Разница в весе спящих</h5>
+							<p class="descriptor">не должна превышать 30 кг</p>
+							<p class="text">Если у спящих наблюдается большая разница в весе, <br>следует ориентироваться на больший вес.</p><img src="{% static 'img/ch4.png' %}"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sectoin-3__quote"><img src="{% static 'img/quotes.png' %}" class="q"/><img src="{% static 'img/ch.png' %}" class="c"/>
+				<h4>Не можете определиться с жесткостью?</h4>
+				<p>Отличным решением будет матрас с разной жесткостью сторон. <br>Меняйте жёсткость матраса просто переворачивая его</p>
+			</div>
+			<button class="section-3__consultation">получить бесплатную консультацию <br>по подбору матраса</button>
+		</div>
+	</section>
+	<section class="catalog">
+		<div class="container">
+			<h2>Выберите свой комфортный матрас</h2>
+			<div class="catalog-block">
+				<div class="catalog-filter">
+					<div class="catalog-filter__flex">
+						<div class="catalog-filter__item height">
+							<p>Высота матраса:</p><span>От</span>
+							<div id="min-height" class="select"><span class="holder">12</span>
+								<ul>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+								</ul>
+							</div><span class="holder">До</span>
+							<div id="max-height" class="select"><span class="holder">20</span>
+								<ul>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog-filter__item">
+							<p>Пружинный блок:</p>
+							<div id="spring" class="select"><span class="holder">Не выбрано</span>
+								<ul>
+                                    {% for spring in springs %}
+									<li>{{ spring.name }}</li>
+                                    {% endfor %}
+								</ul>
+							</div>
+						</div>
+						<div class="catalog-filter__item">
+							<p>По группам:</p>
+							<div id="group" class="select"><span class="holder">Все</span>
+								<ul>
+									{% for group in groups %}
+									<li>{{ group.name }}</li>
+                                    {% endfor %}
+								</ul>
+							</div>
+						</div>
+						<button class="filter-submit"><img src="{% static 'img/zoom.png' %}"/><span>Найти</span></button>
+					</div>
+					<div class="catalog-filter__block clearfix"><span class="non-standart">Нужен нестандартный размер?</span><span class="filter-clear"><img src="{% static 'img/cross.png' %}"/><span>Очистить фильтр</span></span></div>
+				</div>
+				<div class="catalog-main-flex owl-carousel">
+                    {% for product in products %}
+					<div data-height="{{ product.height }}" data-spring="{{ product.spring.name }}"
+                         data-group="{{ product.group.name }}" class="catalog-item">
+                        <span class="price">
+                            <span>от <span>{{ product.price }}Р</span></span>
+                        </span>
+						<h5>{{ product.name }}</h5>
+						<p>Max нагрузка - до {{ product.press }}<br>
+                            Жесткость - {{ product.toughness }}<br>
+                            Высота - {{ product.height }} см
+                        </p>
+                        <img src="{{ product.productimage_set.first.image.url }}"/>
+						<button class="catalog-item-button">Подробнее</button>
+					</div>
+                    {% endfor %}
+				</div>
+				<button class="catalog-show-all">Показать все</button>
+			</div>
+			<div class="catalog-additional clearfix">
+				<h5>С матрасами <br>также <br>покупают:</h5>
+				<div class="catalog-additional__slider owl-carousel">
+                    {% for extra in extras %}
+					<div class="additional-item">
+                        <img src="{{ extra.extraproductimage_set.first.image.url }}"/>
+                        <span class="size">{{ extra.subtitle }}</span>
+						<h6>{{ extra.name }}</h6>
+						<div class="additional-price clearfix"><span>{{ extra.price }} р.</span>
+							<button class="additonal-buy"><img src="{% static 'img/cart.png' %}"/></button>
+						</div>
+					</div>
+                    {% endfor %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-4">
+		<div class="container"><img src="{% static 'img/bg-2.png' %}" class="section-4-bg"/>
+			<div class="section-4__block">
+				<h2>Затрудняетесь с выбором матраса?</h2>
+				<h5>Заполните форму и получите консультацию <br>от ведущего консультанта</h5>
+				<form action="{% url 'sender' %}" method="post">
+					<fieldset class="clearfix">
+						<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+						<input type="text" name="phone" placeholder="Ваш номер телефона" required="required"/>
+					</fieldset>
+                    {% csrf_token %}
+                    <input type="hidden" name="type" value="Заявка на консультацию">
+					<fieldset class="clearfix">
+						<button class="consultation-submit">получить консультацию</button>
+						<input type="checkbox" id="check1" checked="checked"/>
+						<label for="check1"><img src="{% static 'img/lock.png' %}"/><span>Я принимаю <span>условия передачи информации</span></span></label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="section-5">
+		<div class="container">
+			<h2>Честные отзывы наших клиентов <br><span>на стороннем сайте vl.ru</span></h2>
+		</div>
+		<div class="replies-block">
+			<div class="replies-top__photo">
+				<div data-reply="4" class="replies-photo">
+					<div class="reply-border-1"></div>
+					<div class="reply-border-2"></div>
+					<div class="reply-img-wrap"><img src="{% static 'img/r1.png' %}"/></div>
+				</div>
+				<div data-reply="2" class="replies-photo">
+					<div class="reply-border-1"></div>
+					<div class="reply-border-2"></div>
+					<div class="reply-img-wrap"><img src="{% static 'img/r2.png' %}"/></div>
+				</div>
+				<div data-reply="1" class="replies-photo reply-active">
+					<div class="reply-border-1"></div>
+					<div class="reply-border-2"></div>
+					<div class="reply-img-wrap"><img src="{% static 'img/r3.png' %}"/></div>
+				</div>
+				<div data-reply="3" class="replies-photo">
+					<div class="reply-border-1"></div>
+					<div class="reply-border-2"></div>
+					<div class="reply-img-wrap"><img src="{% static 'img/r4.png' %}"/></div>
+				</div>
+				<div data-reply="5" class="replies-photo">
+					<div class="reply-border-1"></div>
+					<div class="reply-border-2"></div>
+					<div class="reply-img-wrap"><img src="{% static 'img/r5.png' %}"/></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="replies-slider owl-carousel">
+					<div data-reply="1" class="replies-item">
+						<p class="name">Наталья <br>Лепёхина</p><img src="{% static 'img/rep1.png' %}"/>
+					</div>
+					<div data-reply="2" class="replies-item">
+						<p class="name">Наталья <br>Лепёхина</p><img src="{% static 'img/rep1.png' %}"/>
+					</div>
+					<div data-reply="3" class="replies-item">
+						<p class="name">Наталья <br>Лепёхина</p><img src="{% static 'img/rep1.png' %}"/>
+					</div>
+					<div data-reply="4" class="replies-item">
+						<p class="name">Наталья <br>Лепёхина</p><img src="{% static 'img/rep1.png' %}"/>
+					</div>
+					<div data-reply="5" class="replies-item">
+						<p class="name">Наталья <br>Лепёхина</p><img src="{% static 'img/rep1.png' %}"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-6">
+		<div class="section-6-bg"><img src="{% static 'img/bg-3.png' %}"/></div>
+		<div class="container">
+			<h2>У вас кровать нестандартных размеров?</h2>
+			<h5>Изготовим матрасы по вашим параметрам и наполнению</h5>
+			<div class="section-6__block clearfix">
+				<div class="section-6__left">
+					<div class="section-6__item">
+						<p>Выбрайте любой наполнитель, <br>пружинный блок и ткань</p>
+					</div>
+					<div class="section-6__item">
+						<p>Создайте новую модель или <br>измените комплектацию <br>стандартной</p>
+					</div>
+					<div class="section-6__item">
+						<p>Индивидуальный матрас <br>по нестандартным размерам <br>без переплат</p>
+					</div>
+					<div class="section-6__item">
+						<p>Изготовление матраса <br>по индивидуальному заказу <br>от 3 до 5 рабочих дней</p>
+					</div>
+				</div>
+				<div class="section-6__right">
+					<h6>Закажите матрас матрас <br>по вашим параметрам</h6>
+					<p class="descriptor">Менеджер свяжется с вами для уточнения <br>параметров вашего матраса</p>
+					<form action="{% url 'sender' %}" method="post">{% csrf_token %}
+						<label>Введите ваше имя*:  </label>
+						<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+						<label>Введите ваш телефон*:  </label>
+						<input type="text" name="phone" placeholder="8 (___) ___-____" required="required"/>
+						<label>Укажите ваш город:  </label>
+						<input type="text" name="city" placeholder="Не указано"/>
+                        <input type="hidden" name="type" value="Заказ матраса по своим параметрам">
+						<button class="section-6__submit">получить консультацию</button>
+						<fieldset>
+							<input type="checkbox" id="check2" checked="checked"/>
+							<label for="check2"><span class="box"></span><span class="text">Я принимаю <span>условия передачи информации</span></span></label>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-7">
+		<div class="container">
+			<h2>Посетите наш выставочный <br><span>салон в Москве</span></h2>
+			<div class="section-7__block">
+				<div class="section-7__item">
+					<h5>Салон находится по адресу:</h5>
+					<p class="address">г. Москва, ул. Автозаводская, д.11, <br>строение 2</p>
+				</div>
+				<p class="inform">В салоне вы получите исчерпывающую <br><span>консультацию по подбору </span><br>вашего индивидуального матраса</p>
+				<p class="inform">Сможете полежать на разных моделях <br><span>матрасов и выбрать удобный</span></p>
+			</div>
+		</div>
+		<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A357c96aa2b0e3c9da91be9b8120aaba0b0f89df3a1fce9e73253d5580e609c19&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script></div>
+	</section>
+	<section class="section-8">
+		<div class="container">
+			<h2>Доставим матрасы <br>в любую точку России</h2>
+			<div class="section-8__block">
+				<div class="section-8__tabs">
+					<div class="section-8__tab-item section-8__tab-active">
+						<div class="text">
+							<div class="tab-img-wrap"><img src="{% static 'img/car.png' %}"/></div>
+							<p>Доставка в регионы</p>
+						</div>
+					</div>
+					<div class="section-8__tab-item">
+						<div class="text">
+							<div class="tab-img-wrap"><img src="{% static 'img/box.png' %}"/></div>
+							<p>Бесплатная доставка <br>по Владивостоку</p>
+						</div>
+					</div>
+				</div>
+				<div class="section-8__items">
+					<div class="section-8__item delivery-current">
+						<h4>Бесплатно доставим ваш матрас <br>до транспортной компании</h4>
+						<p>Доставка занимает от 2 дней, в зависимости от удаленности, и осуществляется транспортными компаниями Энергия «Деловые линии», СДЭК.</p>
+						<button class="delivery-get">подобрать способ доставки</button>
+					</div>
+					<div class="section-8__item">
+						<h4>Бесплатно доставим ваш матрас <br>до подъезда</h4>
+						<p>Доставка матрасов осуществялется с 10:00 ­ до 19:00. <br>При необходи осуществяем подъём 100 рублей этаж.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-9">
+		<div class="section-9-bg"><img src="{% static 'img/bg-4.png' %}"/></div>
+		<div class="container">
+			<h2>Остались вопросы?</h2>
+			<p class="descriptor">Позвоните по круглосуточному номеру</p>
+			<h5>8 (800) 250-14-06</h5>
+			<p class="descriptor">или <span class='callback'>закажите звонок менеджера</span></p>
+		</div>
+	</section>
+	<footer>
+		<div class="container"><img src="{% static 'img/logo.png' %}" class="logo"/>
+			<h2>Производство ортопедических <br>матрасов во Владиовостоке</h2>
+			<div class="head-phone">
+				<p>8 (981) 947-06-82</p><span>Перезвоните мне</span>
+			</div>
+		</div>
+	</footer>
+	<div class="layer">
+		<div class="thank">
+			<h4>Спасибо за сотрудничество!</h4>
+			<p>Наш менеджер свяжется с вами в течение 7 минут</p>
+		</div>
+		<div class="popup-min popup-callback">
+			<div class="popup-form"><img src="{% static 'img/close.png' %}" class="close"/>
+				<h6>перезвоните мне</h6>
+				<p class="descriptor">Наш менеджер свяжется с вами в течение 7 минут</p>
+				<form action="{% url 'sender' %}" method="post">{% csrf_token %}
+					<label>Введите ваше имя*:  </label>
+					<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+					<label>Введите ваш телефон*:  </label>
+					<input type="text" name="phone" placeholder="8 (___) ___-____" required="required"/>
+					<label>Укажите ваш город:  </label>
+					<input type="text" name="city" placeholder="Не указано"/>
+                    <input type="hidden" name="type" value="Заявка на обратный звонок">
+					<button class="popup-min__submit">перезвоните мне</button>
+					<fieldset>
+						<input type="checkbox" id="check3" checked="checked"/>
+						<label for="check3"><span class="box"></span><span class="text">Я принимаю <span>условия передачи информации</span></span></label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="popup-min popup-consultation">
+			<div class="popup-form"><img src="{% static 'img/close.png' %}" class="close"/>
+				<h6>Получите консультацию <br>у нашего менеджера</h6>
+				<p class="descriptor">Менеджер перезвонит вам в течение 7 минут <br>и ответит на интерисующие вопросы</p>
+				<form action="{% url 'sender' %}" method="post">{% csrf_token %}
+					<label>Введите ваше имя*:  </label>
+					<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+					<label>Введите ваш телефон*:  </label>
+					<input type="text" name="phone" placeholder="8 (___) ___-____" required="required"/>
+					<label>Укажите ваш город:  </label>
+					<input type="text" name="city" placeholder="Не указано"/>
+                    <input type="hidden" name="type" value="Заявка на консультацию">
+					<button class="popup-min__submit">перезвоните мне</button>
+					<fieldset>
+						<input type="checkbox" id="check4" checked="checked"/>
+						<label for="check4"><span class="box"></span><span class="text">Я принимаю <span>условия передачи информации</span></span></label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="popup-min popup-delivery">
+			<div class="popup-form"><img src="{% static 'img/close.png' %}" class="close"/>
+				<h6>менеджер подберёт <br>способ доставки</h6>
+				<p class="descriptor">Менеджер свяжеться и согласует с вами <br>маршрут и способ доставки</p>
+				<form action="{% url 'sender' %}" method="post">{% csrf_token %}
+					<label>Введите ваше имя*:  </label>
+					<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+					<label>Введите ваш телефон*:  </label>
+					<input type="text" name="phone" placeholder="8 (___) ___-____" required="required"/>
+					<label>Укажите ваш город:  </label>
+					<input type="text" name="city" placeholder="Не указано"/>
+                    <input type="hidden" name="type" value="Заявка на подбор способа доставки">
+					<button class="popup-min__submit">перезвоните мне</button>
+					<fieldset>
+						<input type="checkbox" id="check5" checked="checked"/>
+						<label for="check5"><span class="box"></span><span class="text">Я принимаю <span>условия передачи информации</span></span></label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="popup-min popup-consultation2 clearfix">
+			<div class="popup-consultation__block">
+				<h6>индивидуальный <br>матрас без переплат</h6>
+				<div class="popup-consultation__item">
+					<p>Выбрайте любой наполнитель, <br>пружинный блок и ткань</p>
+				</div>
+				<div class="popup-consultation__item">
+					<p>Создайте новую модель или <br>измените комплектацию <br>стандартной</p>
+				</div>
+				<div class="popup-consultation__item">
+					<p>Индивидуальный матрас <br>по нестандартным размерам <br>без переплат</p>
+				</div>
+				<div class="popup-consultation__item">
+					<p>Изготовление матраса <br>по индивидуальному заказу <br>от 3 до 5 рабочих дней</p>
+				</div>
+			</div>
+			<div class="popup-form"><img src="{% static 'img/close.png' %}" class="close"/>
+				<h6>Получите консультацию <br>у нашего менеджера</h6>
+				<p class="descriptor">Менеджер перезвонит вам в течение 7 минут <br>и ответит на интерисующие вопросы</p>
+				<form action="{% url 'sender' %}" method="post">{% csrf_token %}
+					<label>Введите ваше имя*:  </label>
+					<input type="text" name="name" placeholder="Ваше имя" required="required"/>
+					<label>Введите ваш телефон*:  </label>
+					<input type="text" name="phone" placeholder="8 (___) ___-____" required="required"/>
+					<label>Укажите ваш город:  </label>
+					<input type="text" name="city" placeholder="Не указано"/>
+                    <input type="hidden" name="type" value="Заявка на косультацию">
+					<button class="popup-min__submit">перезвоните мне</button>
+					<fieldset>
+						<input type="checkbox" id="check6" checked="checked"/>
+						<label for="check6"><span class="box"></span><span class="text">Я принимаю <span>условия передачи информации</span></span></label>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+        {% for product in products %}
+		<div class="popup-catalog clearfix">
+            <img src="{% static 'img/close.png' %}" class="close-popup"/>
+			<div class="popup-catalog__left">
+				<h5>{{ product.name }}</h5>
+				<p class="descriptor">{{ product.subtitle }}</p>
+				<div class="popup-slider owl-carousel">
+                    {% for image in product.productimage_set.all %}
+					<div class="popup-img-wrap">
+                        <img src="{{ image.image.url }}"/>
+                    </div>
+                    {% endfor %}
+				</div>
+				<p class="price"><span>{{ product.price }}</span>Р</p>
+				<p class="size-label">Размеры матраса:</p>
+				<div class="select popup-select"><span class="holder">{{ product.height }}
+                    (<span class='new-price'>{{ product.price }}</span>Р)</span>
+					<ul>
+                        {% for size in product.productsizes_set.all %}
+						<li>{{ size.size }} (<span class='new-price'>{{ size.price }}</span>Р)</li>
+                        {% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class="popup-catalog__right">
+				<p><b>Жесткость:</b> {{ product.toughness }}</p>
+				<p><b>Максимальная нагрузка:</b> <br>{{ product.press }}</p>
+				<p><b>Высота:</b> {{ product.height }} см</p>
+				<p><b>Срок службы:</b> {{ product.date }}</p>
+				<p><b>Гарантия:</b> {{ product.guaranty }}</p>
+				<h6>Состав по слоям:</h6>
+				<ul>
+                    {% for material in product.productmaterials_set.all %}
+					<li>{{ material.material }}</li>
+                    {% endfor %}
+				</ul>
+				<div class="popup-buttons clearfix">
+					<button class="popup-buy">купить в 1 клик</button>
+					<button class="popup-consultation-button">консультация</button>
+				</div>
+			</div>
+			<div class="popup-advances">
+				<div class="popup-advance clearfix"><img src="{% static 'img/i1.png' %}"/>
+					<p>экономия до 30% <br>за счет собственного <br>производства</p>
+				</div>
+				<div class="popup-advance clearfix"><img src="{% static 'img/i2.png' %}"/>
+					<p>Гарантия на <br>матрасы 5 лет</p>
+				</div>
+				<div class="popup-advance clearfix"><img src="{% static 'img/i3.png' %}"/>
+					<p>Бесплатный <br>"Sleep test" 3 дня</p>
+				</div>
+				<div class="popup-advance clearfix"><img src="{% static 'img/i4.png' %}"/>
+					<p>Бесплатная доставка <br>по Владивастоку</p>
+				</div>
+			</div>
+		</div>
+        {% endfor %}
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="{% static 'libs/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'libs/Swiper-4.0.6/dist/js/swiper.min.js' %}"></script>
+	<script src="{% static 'libs/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js' %}"></script>
+	<script src="{% static 'js/mask.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
