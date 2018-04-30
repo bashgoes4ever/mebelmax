@@ -213,6 +213,7 @@
       border-radius: 10px; }
   .popup-catalog {
     width: 534px;
+    height: auto;
     padding: 70px 56px 351px 56px; }
   .popup-slider {
     position: relative;
@@ -229,7 +230,20 @@
     padding: 40px 58px 0 58px; }
   .popup-advance {
     width: 100%;
+    height: auto;
     margin-bottom: 40px; }
+  .section-1 .container .section-1-bg-1 {
+    left: -400px;
+    opacity: .4; }
+  .section-1 .container .section-1-bg-2 {
+    display: none; }
+  .section-1 .container h2 {
+    z-index: 3;
+  }
+  .section-1 .container p {
+    z-index: 3;
+    position: relative;
+  }
     .popup-advance p br {
       display: none; } }
 
@@ -240,6 +254,7 @@
     width: 60px;
     margin-right: 20px; }
   header h2 {
+    width: 185px;
     font-size: 13px;
     line-height: 17px; }
   header .burger {
@@ -320,11 +335,13 @@
     top: -100px; }
   .section-1 .container .section-1-bg-2 {
     width: 300px;
-    left: -170px; }
+    left: -170px;
+    opacity: .4; }
   .section-1 .container h2 {
     font-size: 18px;
     line-height: 26px;
-    background-size: 225px 78px; }
+    background-size: 225px 78px;
+    z-index: 3; }
     .section-1 .container h2 .line {
       width: 130px;
       top: 40px;
@@ -344,7 +361,8 @@
   .section-2-bg-1 {
     width: 230px;
     right: -50px;
-    top: 90px; }
+    top: 90px;
+    display: none; }
   .section-2__menu {
     width: 100%;
     display: none;
@@ -793,7 +811,8 @@
     padding: 30px 20px 0 20px; }
   .popup-advance p {
     font-size: 12px; }
-  .popup-buttons button {
+  .popup-buttons button, .popup-buttons a {
     width: 100%;
     margin-bottom: 15px;
-    float: none; } }
+    float: none;
+    display: block; } }

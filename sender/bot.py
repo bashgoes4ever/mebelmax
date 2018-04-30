@@ -2,14 +2,24 @@
 import telebot
 
 
-def send_app(name, phone, type, city=''):
+def send_app(name, phone, type, city='', street='', address='', mail='', info='', price=''):
     token = '482033449:AAFvtdyoXs3PO-3kC-tZNHR1DZfsolGbQog'
     bot = telebot.TeleBot(token)
     ids = []
     text_mes = '{}\nИмя: {}\nТелефон: {}\n'.format(type, name, phone)
 
+    if mail != '':
+        text_mes += 'E-mail: {}\n'.format(mail)
     if city != '':
         text_mes += 'Город: {}\n'.format(city)
+    if street != '':
+        text_mes += 'Улица: {}\n'.format(street)
+    if address != '':
+        text_mes += 'Квартира: {}\n'.format(address)
+    if info != '':
+        text_mes += 'Информация о товаре: {}\n'.format(info)
+    if price != '':
+        text_mes += 'Сумма платежа: {}\n'.format(price)
 
     bot.send_message('@mebelmaxappliesgroup', text_mes)
 

@@ -3,7 +3,7 @@ from products.models import Product, ProductGroup, ProductSpring, ExtraProduct
 
 
 def mebel(request):
-    products = Product.objects.filter(is_active=True)
+    products = Product.objects.order_by('price').filter(is_active=True)
     springs = ProductSpring.objects.all()
     groups = ProductGroup.objects.all()
     extras = ExtraProduct.objects.all()

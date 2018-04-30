@@ -8,19 +8,23 @@ $(document).ready(function() {
 			if ($(window).scrollTop() > nav_top) {
 				$('nav').addClass('sticky-nav')
 				$('body').css('margin-top', nav_height+'px')
+				$('.main-bg-wrap img').css('top', (-nav_height-80)+'px')
 			} else {
 				$('nav').removeClass('sticky-nav')	
-				$('body').css('margin-top', '0px')		
+				$('body').css('margin-top', '0px')
+				$('.main-bg-wrap img').css('top', -80+'px')		
 			}
 		})
 	} else {
 		var nav_top = 0
+		var nav_height = 0
 	}
 	//sticky navbar -- END
 
 	//menu
+
 	function go(select) {
-		var destination = select.offset().top - nav_top;
+		var destination = select.offset().top - nav_height;
 		$('html, body').animate({ scrollTop: destination}, 500);
 		return false; 
 	}
@@ -62,7 +66,7 @@ $(document).ready(function() {
 				return (letters.indexOf(String.fromCharCode(e.which))!=-1);
 			}
 		});
-	$("input[name=phone]").mask("8 (999) 999-9999");
+	$("input[name=phone]").mask("9 (999) 999-9999");
 	//masks -- END
 
 	//info
@@ -356,8 +360,14 @@ $(document).ready(function() {
 	$('.catalog-item').each(function(e) {
 		$(this).attr('data-catalog', e)
 	})
-	$('.popup-catalog').each(function(e) {
+	$('.popup-product').each(function(e) {
 		$(this).attr('data-catalog', e)
+	})
+	$('.additional-item').each(function(e) {
+		$(this).attr('data-extra', e)
+	})
+	$('.popup-extra').each(function(e) {
+		$(this).attr('data-extra', e)
 	})
 
 	$('.head-phone span').click(function() {
@@ -382,6 +392,14 @@ $(document).ready(function() {
 		//$('.popup-catalog').fadeIn(500)
 		$('.popup-catalog[data-catalog='+id+']').fadeIn(500)
 	})
+	$('.additional-item').click(function() {
+		var id = $(this).data('extra')
+		$('.layer').fadeIn(300)
+		//$('.popup-catalog').fadeIn(500)
+		$('.popup-extra[data-extra='+id+']').fadeIn(500)
+	})
+
+
 	$('.popup-consultation-button').click(function() {
 		$(this).closest('.popup-catalog').fadeOut(300)
 		setTimeout(function() {
@@ -394,17 +412,41 @@ $(document).ready(function() {
 			$(this).fadeOut(300)
 			$('.popup-min').fadeOut(300)
 			$('.popup-catalog').fadeOut(300)
+			$('.buy-form').fadeOut(300)
 			$('.thank').fadeOut(300)
 		}
 	})
 	$('.popup-min .close').click(function() {
 		$('.popup-min').fadeOut(300)
 		$('.layer').fadeOut(300)
+		$('.buy-form').fadeOut(300)
 	})
 	$('.popup-catalog .close-popup').click(function() {
 		$('.popup-catalog').fadeOut(300)
 		$('.layer').fadeOut(300)
+		$('.buy-form').fadeOut(300)
 	})
+
+	$('.popup-buy').click(function() {
+		$('.layer').fadeIn(300)
+		$('.popup-catalog').fadeOut(300)
+		$('.popup-min').fadeOut(300)
+		$('.buy-form').fadeIn(500)
+		var info = $(this).parents('.popup-buttons').parents('.popup-catalog__right').siblings('.popup-catalog__left')
+		var title = info.children('h5').text()
+		var subtitle = info.children('.descriptor').text()
+		var product_name = title + ' ' + subtitle
+		var price = info.children('.popup-select').children('.holder').text()
+		var accurate_price = info.children('.price').children('span').text()
+		$('.buy-form input[name=accurate-price]').val(accurate_price)
+		$('.buy-form input[name=product-size]').val(price)
+		$('.buy-form input[name=product-title]').val(title)
+		$('.buy-form input[name=product-subtitle]').val(subtitle)
+		$('.buy-form .buy-product').text(product_name)
+		$('.buy-form .buy-price').text(price)
+	})
+
+
 	//POP UPS -- END
 
 	//FORM SUBMIT
@@ -432,6 +474,25 @@ $(document).ready(function() {
 		})
 		
 	})
+
+	/*
+	оплата
+	*/
+	$('#pay-form').submit(function(e){
+		e.preventDefault()
+
+		var data = $(this).serialize()
+
+		$.ajax({
+			url: '/checkform/&',
+			data: data,
+			type: 'POST',
+			success: function(result){
+				window.location.href = result['response'];
+			}
+		})
+	})
+
 	//FORM SUBMIT -- END
 
 })

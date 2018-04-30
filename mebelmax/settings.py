@@ -127,6 +127,13 @@ STATICFILES_DIRS = (
   os.path.join(BASE_DIR, "static",),
 )
 
+
+EMAIL_HOST = 'smtp.timeweb.ru'
+EMAIL_HOST_USER = 'mail@matras-mebelmax.com'
+EMAIL_HOST_PASSWORD = 'cashbanger12'
+DEFAULT_FROM_EMAIL = 'mail@matras-mebelmax.com'
+SERVER_EMAIL = 'mail@matras-mebelmax.com'
+
 try:
     from .settings_prod import *
 except:

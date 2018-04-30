@@ -33,9 +33,19 @@ class ExtraProductImageInline(admin.TabularInline):
     extra = 1
 
 
+class ExtraSizeInline(admin.TabularInline):
+    model = ExtraSizes
+    extra = 3
+
+
+class ExtraMaterialInline(admin.TabularInline):
+    model = ExtraMaterials
+    extra = 4
+
+
 class ExtraProductAdmin(admin.ModelAdmin):
     list_display = [field.name for field in ExtraProduct._meta.fields]
-    inlines = [ExtraProductImageInline]
+    inlines = [ExtraProductImageInline, ExtraSizeInline, ExtraMaterialInline]
 
     class Meta:
         model = ExtraProduct

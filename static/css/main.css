@@ -52,7 +52,7 @@ main {
   left: 0; }
   .main-bg-wrap img {
     position: absolute;
-    top: 0;
+    top: -80px;
     left: 50%;
     transform: translateX(-50%); }
 
@@ -137,7 +137,7 @@ nav {
 
 .main-1 {
   position: relative;
-  padding-top: 120px; }
+  padding-top: 100px; }
   .main-1 h1 {
     font-size: 42px;
     line-height: 52px;
@@ -195,6 +195,8 @@ nav {
     left: 180px; }
   .main-item:nth-child(2) .info {
     left: 210px; }
+  .main-item:nth-child(3) .info {
+    left: 180px; }
   .main-item .num {
     float: left;
     font-size: 74px;
@@ -246,14 +248,14 @@ nav {
     z-index: 2; }
     .section-1 .container .section-1-bg-1 {
       position: absolute;
-      left: -400px;
-      top: -160px;
-      z-index: 2; }
+      left: -300px;
+      top: -80px;
+      z-index: 1; }
     .section-1 .container .section-1-bg-2 {
       position: absolute;
-      left: -300px;
-      top: -75px;
-      z-index: 1; }
+      left: -370px;
+      top: -125px;
+      z-index: 2; }
     .section-1 .container h2 {
       font-size: 44px;
       font-weight: bold;
@@ -280,7 +282,8 @@ nav {
       .section-1 .container p span {
         text-transform: uppercase;
         text-decoration: underline;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #7cced1; }
         .section-1 .container p span:hover {
           text-decoration: none; }
 
@@ -533,7 +536,7 @@ nav {
 
 .sectoin-3__quote {
   width: 875px;
-  margin: 41px 0 0 auto;
+  margin: 41px 10px 0 auto;
   position: relative;
   border: 1px solid #eaeaea;
   padding: 30px 0 40px 70px; }
@@ -884,6 +887,7 @@ nav {
   .additional-item > img {
     display: block;
     position: absolute;
+    width: 177px;
     top: 22px;
     right: 0;
     left: 0;
@@ -916,10 +920,13 @@ nav {
     border-radius: 15px;
     background-color: #78d3ce;
     float: right;
-    padding-bottom: 3px;
     transition: all .5s; }
     .additional-price button:hover {
       background-color: #dcddde; }
+  .additional-price a img {
+    display: block;
+    margin: 0 auto;
+  }
 
 .section-4 {
   padding: 140px 0 150px 0;
@@ -932,7 +939,7 @@ nav {
   position: absolute;
   z-index: 1;
   top: -140px;
-  left: -442px; }
+  left: -212px; }
 
 .section-4__block {
   position: relative;
@@ -1555,6 +1562,7 @@ footer {
 .popup-catalog {
   display: none;
   width: 970px;
+  height: 742px;
   border-radius: 10px;
   background-color: #fff;
   padding: 70px 56px 251px 56px;
@@ -1572,7 +1580,7 @@ footer {
 
 .popup-catalog__left {
   float: left;
-  width: 368px; }
+  width: 400px; }
   .popup-catalog__left h5 {
     text-transform: uppercase;
     font-size: 36px;
@@ -1612,6 +1620,8 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
+    min-width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%); }
 
 .popup-button-prev, .popup-button-next {
@@ -1681,7 +1691,7 @@ footer {
 
 .popup-buttons {
   margin-top: 25px; }
-  .popup-buttons button {
+  .popup-buttons button, .popup-buttons a {
     width: 208px;
     height: 56px;
     border-radius: 28px;
@@ -1693,7 +1703,9 @@ footer {
 
 .popup-buy {
   float: left;
-  background: linear-gradient(to right, #7cd0d0, #8890e2); }
+  background: linear-gradient(to right, #7cd0d0, #8890e2);
+  text-align: center;
+  padding-top: 17px; }
   .popup-buy:hover {
     filter: hue-rotate(70deg); }
 
@@ -1720,6 +1732,7 @@ footer {
   justify-content: space-between; }
 
 .popup-advance {
+  height: 81px;
   position: relative; }
   .popup-advance img {
     position: absolute;
@@ -1923,4 +1936,27 @@ footer {
   font-weight: 300;
   font-size: 18px;
   margin-top: 15px;
+}
+
+.rub {
+  font-family: 'Rouble';
+  font-style: normal;
+}
+
+.buy-form {
+  display: none;
+  z-index: 12;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 50px auto;
+}
+.buy-form .col-lg-8.col-lg-offset-2{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.buy-form .col-lg-8.col-lg-offset-2 .btn{
+  background-color: #4cae4c;
 }
